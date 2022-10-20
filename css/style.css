@@ -19,7 +19,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none !important;
-    list-style: none !important;
+    /*list-style: none !important;*/
     outline: none !important;
 }
 
@@ -202,7 +202,7 @@ blockquote {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: yellow;
+    background-color: #d96846;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
@@ -393,7 +393,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 .banner {
     width: 100%;
-    background-image: url('../images/back2.png');
+    background-image: url('../images/Banner2.png');
     -webkit-background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -401,6 +401,7 @@ nav.fixed-top .nav-item .nav-link:before {
     overflow: hidden;
     height: 100vh !important;
 }
+
 
 .banner:after {
     content: " ";
@@ -458,6 +459,7 @@ nav.fixed-top .nav-item .nav-link:before {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
+
 
 @-webkit-keyframes bounce {
     0%,
@@ -759,6 +761,8 @@ section.banner-blog .banner-caption h1 {
 @media screen and (max-width: 767px) {
     .banner{
         text-align: center;
+        background-image: url(../images/banner-phone1.png);
+        background-size: 100% 100%;
     }
     .banner .banner-caption h1 {
         font-size: 46px;
