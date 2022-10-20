@@ -217,10 +217,11 @@
                             <h5>DOSSA</h4>
                             <p>Fun to be degenerate!!!</p>
 
-                             <a href="mailto:info@dossacoin.club">
+                            <h5>Contact us: <a href="mailto:info@dossacoin.club">
                                 <!-- <img src="images/Email.png" width="50" height="10"> -->
-                                <span class="icon-desc">info@dossacoin</span>
-                             </a>
+                                <span class="icon-desc">info@dossacoin.club</span>
+                             </a></h5>
+                             
                         </div>
                     </div>
                 </div>
@@ -261,7 +262,8 @@
 
 
         <script>
-           function copyFunction(e){
+           function copyFunction(){
+            copyValue = document.getElementById("asa").innerText;
             navigator.clipboard.writeText(copyValue);
             document.querySelector('.copy').classList.remove('fa-copy');
             document.querySelector('.copy').classList.add('fa-check');
