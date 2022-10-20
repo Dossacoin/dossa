@@ -202,7 +202,7 @@ blockquote {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: yellow;
+    background-color: #d96846;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;

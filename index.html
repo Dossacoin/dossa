@@ -90,7 +90,7 @@
 
         <!--Home Section Start-->
         <section id="promo"  data-scroll-index="0" class="banner banner-preview" data-stellar-background-ratio=".7">
-            <div class="container-fluid p-0">
+            <div class="container p-0">
                 <!--Banner Content-->
                 <div class="banner-caption">
                     <h1 class="cd-headline clip">
@@ -126,7 +126,7 @@
                     <p>
                         We created this token as way of shilling Algorand to our peeps from other chains. Haven't heard of algorand 
                     </p>
-                    <a href=""> Read here.....</a>
+                    <a href="https://www.algorand.foundation/"> Read here.....</a>
                 </div> 
             </div>
         </div>
@@ -174,14 +174,13 @@
                 <li>
                     Enter any amount of algo you wish to swap for precious Dossa and hit that swap button without hesitation.
                 </li>
-
             </ol>
         </div>
 
         <div class="container p-5 join">
             <h2 class="mx-auto">Join our club</h2>
             <div class="icons-container mx-auto text-center mt-40">
-                <a href="">
+                <a href="https://twitter.com/DossaCoin?t=UkutmLY-SQm5-AJ5qTk11Q&s=08">
                     <img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png">
                     <span class="icon-desc">Twitter</span>
                 </a>
@@ -189,9 +188,15 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/3536/3536761.png">
                     <span class="icon-desc">Reddit</span>
                 </a>
-                <a href="">
+                
+                <a href="https://discord.gg/ASehXYbwJY">
                     <img src="https://cdn-icons-png.flaticon.com/128/2111/2111370.png">
                     <span class="icon-desc">Discord</span>
+                </a>
+                
+                <a href="info@dossacoin.club">
+                    <img src="images/Email.png">
+                    <span class="icon-desc">Email</span>
                 </a>
 
                 <a href="">
@@ -203,7 +208,7 @@
 
         <!--Footer Start-->
         <footer class="pt-50 pb-50">
-            <div class="container">
+            <div class="container p-5">
                 <div class="row text-center">
                     <div class="col-md">
                         <div class="contact-info">
@@ -251,18 +256,9 @@
             // alert("hh");
             let copyValue = "906662995";
             navigator.clipboard.writeText(copyValue);
-            console.log(e.target);
+            document.querySelector(".copy").classList.remove("fa-copy");
+            document.querySelector(".copy").classList.add("fa-check");
            }
         </script>
-         <!-- <script>
-        //     function copyFunction(){
-        //         alert("hh");
-        //         let copyValue = "906662995";
-        //         let asa_digit = document.getElementById("asa");
-        //         // asa_digit.select();
-
-        //         navigator.clipboard.writeText(copyValue);
-        // </script> -->
-
     </body>
 </html>
