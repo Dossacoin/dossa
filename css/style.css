@@ -754,9 +754,13 @@ section.banner-blog .banner-caption h1 {
     }
     .banner .banner-caption p {
         font-size: 18px;
+        width: 100%;
     }
     .banner #home-svg {
         height: 80px;
+    }
+    .arrow{
+        padding-left:0; 
     }
     section.banner-blog .banner-caption h1 {
         font-size: 32px;
