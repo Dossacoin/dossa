@@ -19,7 +19,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none !important;
-    /*list-style: none !important;*/
+    list-style: none !important;
     outline: none !important;
 }
 
@@ -393,7 +393,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 .banner {
     width: 100%;
-    background-image: url('../images/B2.jpg');
+    background-image: url('../images/back2.png');
     -webkit-background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -432,7 +432,7 @@ nav.fixed-top .nav-item .nav-link:before {
 }
 
 .banner .banner-caption p {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Raleway", san-serif;
     color: #eee;
     word-wrap: break-word;
@@ -441,10 +441,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 }
 
-.big h2{
-  font-size: 90px;
-  font-weight: bold;
-}
+
 .arrow {
     position: absolute;
     bottom: 10vh;
@@ -552,6 +549,20 @@ nav.fixed-top .nav-item .nav-link:before {
 .about-inner
 {
     background-color: #cdcbd6; 
+}
+
+/*============= how ===================*/
+
+
+.small-containers .col{
+    /*width: 50%;/*/
+    background-color: #2f3020;
+    border-radius: 10px;
+    padding: 1em;
+    margin:20px;
+    color: #fff;
+    /*gap:30px;*/
+    text-align: center;
 }
 
 
