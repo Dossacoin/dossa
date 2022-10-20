@@ -417,7 +417,7 @@ blockquote {
 
 .preloader {
     position: fixed;
-    background-color: #D96846;
+    background-color: #2222;
     z-index: 9999;
     height: 100%;
     width: 100%;
@@ -440,7 +440,7 @@ blockquote {
     position: absolute;
     height: 50%;
     width: 100%;
-    background-color: #D96846;
+    background-color: #333;
     -webkit-transition: .5s all ease;
     -o-transition: .5s all ease;
     transition: .5s all ease;
@@ -473,7 +473,7 @@ blockquote {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: #596235;
+    background-color: yellow;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
@@ -496,7 +496,7 @@ blockquote {
 
 .preloader .loader:before {
     content: '';
-    border: 10px solid #D96846;
+    border: 10px solid #333;
     top: -10px;
     left: -10px;
     -webkit-box-sizing: content-box;
