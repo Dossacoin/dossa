@@ -99,15 +99,25 @@
                         <span style="font-family: 'Merienda';">FUN TO BE DEGENERATE</span>
                     </h1>
                     <p class="lead">
-                        This is a meme coin, no utility, probably the easiest way you'd
+                        This is a meme coin, no utility. Probably the easiest way you'd
                         ever make a grand or fastest way to loose your life savings. So,
-                        Not financial advice..
+                        Not a Financial advice..
                     </p>
+
                     <p class="cd-headline clip">
-                        <h4>ASA ID: <span id="asa" title="hello">906662995</span> <button style="background: none; border:none; padding:0; color:white;" onclick="copyFunction()"><i class="fa fa-copy copy"></i></button></h4>
+                        <h4>ASA ID: <span styid="asa" title="hello">906662995</span> <button style="background: none; border:none; padding: 0; color:white;" onclick="copyFunction()"><i class="fa fa-copy copy"></i></button></h4>
                     </p>
-                   
-                    
+
+                    <div style="text-align: center; font-size: 1.3rem; font-weight: 500;">
+                        <label style="font-weight: bold;">Enjoy staking reward</label>
+                        <div>
+                            <span style="color: rgb(248, 164, 7); font-weight: bold">Holders</span>: <span>350% APR</span>
+                        </div>
+                        <div>
+                            <span style="color: rgb(248, 164, 7); font-weight: bold">LP</span>: <span>420% APR</span>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="arrow bounce">
                     <a class="fa fa-chevron-down fa-2x" href="" data-scroll-nav="1"></a>
@@ -118,11 +128,10 @@
 
         <!--Home Section End-->
 
-
-
+        <div class="blur"></div>
 
         <!-- about us -->
-        <div class="about-inner" data-scroll-index="1" id="about">
+        <div style="color: #fff" class="about-inner" data-scroll-index="1" id="about">
             <div class="container p-5">
                 <h2 class="center">ABOUT</h2>
 
@@ -183,30 +192,35 @@
                 </li>
             </ol>
         </div>
+        
+        <div class="container p-5 join">
+            <h2 class="mx-auto">WHO ARE WE?</h2>
+            <p style="color: rgb(83, 82, 82);">
+                @Decipherer.web3#2245 is our lead, He kyced to Pera
+                A group of 6 degen freinds, scattered acrose multiple chain but bounded by love of algorand. parson#5151 is our tech guy. kingsjee#3621, Dev and all others are degens across Solana, Ethereum and BSC.
+                Some team members aren't always available but we hope to create a healthy community with you.
+            </p>
+        </div>  
 
         <div class="container p-5 join">
             <h2 class="mx-auto">Join our club</h2>
             <div class="icons-container mx-auto text-center mt-40">
                 <a href="https://twitter.com/DossaCoin?t=UkutmLY-SQm5-AJ5qTk11Q&s=08">
                     <img src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png">
-                    <span class="icon-desc">Twitter</span>
                 </a>
                <a href="https://www.reddit.com/r/Dossaclub?utm_medium=android_app&utm_source=share"> 
                     <img src="https://cdn-icons-png.flaticon.com/128/3536/3536761.png">
-                    <span class="icon-desc">Reddit</span>
                 </a>
                 
                 <a href="https://discord.gg/ASehXYbwJY">
                     <img src="https://cdn-icons-png.flaticon.com/128/2111/2111370.png">
-                    <span class="icon-desc">Discord</span>
                 </a>
 
                 <a href="">
                     <img src="images/V.png">
-                    <span class="icon-desc">Vestige</span>
                 </a>
             </div>
-        </div>        
+        </div>   
 
         <!--Footer Start-->
         <footer class="pt-50 pb-50">
@@ -215,7 +229,7 @@
                     <div class="col-md p-5">
                         <div class="contact-info">
                             <h5>DOSSA</h4>
-                            <p>Fun to be degenerate!!!</p>
+                            <p>Fun to be degenerated!!!</p>
 
                             <h5>Contact us: <a href="mailto:info@dossacoin.club">
                                 <!-- <img src="images/Email.png" width="50" height="10"> -->
@@ -229,7 +243,12 @@
                     <div class="col-md-12">
                         <hr>
                         <p class="copy pt-30">
-                            &copy; 2022. Dossa.
+                            &copy; <script>
+                               const currentYear = new Date().getFullYear();
+                               const formedYear = 2022;
+                               const year = Number(currentYear) > formedYear ? `${formedYear} - ${currentYear}` : currentYear
+                               document.write(year)
+                            </script> Dossa.
                         </p>
                     </div>
                 </div>
@@ -264,7 +283,8 @@
         <script>
            function copyFunction(){
             copyValue = document.getElementById("asa").innerText;
-            navigator.clipboard.writeText(copyValue);
+            const copy = navigator.clipboard.writeText(copyValue);
+            console.log(copy)
             document.querySelector('.copy').classList.remove('fa-copy');
             document.querySelector('.copy').classList.add('fa-check');
            }
