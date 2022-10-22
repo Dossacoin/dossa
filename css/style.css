@@ -10,7 +10,6 @@
         8. Mobile Responsive
 ==================================*/
 
-
 /*============ 1. Body and Core Css ============*/
 
 * {
@@ -141,7 +140,6 @@ blockquote {
     font-weight: 500;
 }
 
-
 /*============ 2. Preloader  ============*/
 
 .preloader {
@@ -189,6 +187,8 @@ blockquote {
 .preloader.loaded:after {
     height: 0%;
 }
+
+.arrow
 
 .preloader .loader {
     width: 50px;
@@ -442,7 +442,6 @@ nav.fixed-top .nav-item .nav-link:before {
 
 }
 
-
 .arrow {
     position: absolute;
     bottom: 10vh;
@@ -461,7 +460,7 @@ nav.fixed-top .nav-item .nav-link:before {
 }
 
 
-@-webkit-keyframes bounce {
+/* @-webkit-keyframes bounce {
     0%,
     20%,
     50%,
@@ -478,7 +477,7 @@ nav.fixed-top .nav-item .nav-link:before {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
-}
+} */
 
 @keyframes bounce {
     0%,
@@ -781,4 +780,20 @@ section.banner-blog .banner-caption h1 {
         font-size: 32px;
     }
 }
- 
+
+#about {
+    background: url('../images/bull.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blur{
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    border-top: 10px solid rgb(14, 14, 14);
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-4px);
+    filter: blur(5px);
+}
