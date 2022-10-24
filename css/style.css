@@ -18,20 +18,19 @@
     padding: 0;
     margin: 0;
     text-decoration: none !important;
-    /*list-style: none !important;*/
+    list-style: none !important;
     outline: none !important;
 }
 
+h2,h3,h4,h5{
+    color: #d96846 !important;
+}
 
 h2{
     text-align:center;
     color: #d96846;
     text-transform: uppercase;
     margin-bottom: 1em;
-}
-
-h3{
-    font-size: 16px;
 }
 
 img {
@@ -42,13 +41,13 @@ img {
 a,
 a:hover,
 a:focus {
-    color: red;
+    color: #d96846;
 }
 
 body {
     font-family: "Raleway", san-serif;
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.65;
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
@@ -386,6 +385,9 @@ nav.fixed-top .nav-item {
 nav.fixed-top .nav-item .nav-link {
     color: #222 !important;
 }
+nav.fixed-top .nav-item .nav-link.active{
+    color: #d96846 !important;
+}
 
 nav.fixed-top .nav-item .nav-link:before {
     background-color: #000;
@@ -433,6 +435,10 @@ nav.fixed-top .nav-item .nav-link:before {
     font-size: 40px;
     font-weight: 900;
     color: #fff;
+}
+
+.banner-caption h4{
+    color: #Fff !important;
 }
 
 .banner .banner-caption p {
@@ -502,16 +508,6 @@ nav.fixed-top .nav-item .nav-link:before {
 }
 
 
-/*===Slider Page===*/
-.banner .banner-slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-
 /*===Creative Page===*/
 #home-svg {
     height: 150px;
@@ -537,23 +533,14 @@ nav.fixed-top .nav-item .nav-link:before {
     text-align: center;
 }
 
-/*===Index Particles===*/
-
-.banner #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 15;
-}
-
 
 /*============ 5. About Section ============*/
-/*.about-inner
+.about-inner
 {
-    background-color: #cdcbd6; 
-}*/
+    /*background-colo`r: #cdcbd6; */
+    text-align: center;
+    padding: 100px 0px;
+}
 
 /*============= how ===================*/
 
@@ -610,6 +597,101 @@ footer .copy {
     font-size: 14px;
     color: #aaa;
 }
+
+
+
+
+/*#about {
+    background: url('../images/bull.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
+
+.active{
+    color: #d96846 !important;
+}
+.blur{
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    border-top: 10px solid rgb(14, 14, 14);
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-4px);
+    filter: blur(5px);
+}
+
+.who{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+.who .card{
+    background-color: transparent;
+    /*border: 1px  solid;*/
+    margin: 10px;
+}
+.who p{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+
+.row{
+    justify-content: center !important;
+}
+
+.card{
+    min-height: 300px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#buy .card{
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.batch{
+    background-color: #d96846;
+    color: white;
+    width:100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    /*border-bottom-left-radius: 10px;*/
+}
+
+
+.stat{
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:350px;
+    background-color: #222;
+    padding:1em;
+    border-radius: 10px;
+    color: #fff !important;
+    text-align: center;
+    z-index: 20;
+    opacity: .7;
+}
+
+
+
+
 
 /*============ 15. Mobile Responsive  ============*/
 
@@ -668,53 +750,8 @@ footer .copy {
     section.banner-blog .banner-caption h1 {
         font-size: 32px;
     }
-}
-
-/*#about {
-    background: url('../images/bull.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
-
-.blur{
-    width: 100%;
-    position: absolute;
-    height: 10px;
-    border-top: 10px solid rgb(14, 14, 14);
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(-4px);
-    filter: blur(5px);
-}
-
-
-.row{
-    justify-content: center !important;
-}
-
-.card{
-    min-height: 350px;
-    width: 350px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.col{
-    justify-content:    center !important;
-    align-items:    center !important;  
-}
-
-.batch{
-    background-color: red;
-    color: white;
-    width:100px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom-right-radius: 10px;
-    /*border-bottom-left-radius: 10px;*/
+    .stat{
+        position: static !important;
+        display: none;
+    }
 }
