@@ -626,12 +626,14 @@ footer .copy {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 }
 .who .card{
-    background-color: transparent;
+    background-color: transparent !important;
     /*border: 1px  solid;*/
     margin: 10px;
+    border:none;
+
 }
 .who p{
     font-size: 20px;
