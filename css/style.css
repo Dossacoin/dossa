@@ -45,12 +45,13 @@ a:focus {
 }
 
 body {
-    font-family: "Raleway", san-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     font-size: 18px;
     line-height: 1.65;
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 p {
@@ -725,9 +726,16 @@ footer .copy {
     section.banner-blog .banner-caption h1 {
         font-size: 40px;
     }
+    .ads{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    body{
+        width: 100%;
+        max-width: 100%;
+    }
     .banner{
         text-align: center;
         background-image: url(../images/banner-phone1.png);
@@ -754,5 +762,8 @@ footer .copy {
         /*display: none;*/
         /*width: 100px;*/
         z-index: 20;
+    }
+    .ads{
+        display: none;
     }
 }
