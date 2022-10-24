@@ -18,20 +18,19 @@
     padding: 0;
     margin: 0;
     text-decoration: none !important;
-    /*list-style: none !important;*/
+    list-style: none !important;
     outline: none !important;
 }
 
+h2,h3,h4,h5{
+    color: #d96846 !important;
+}
 
 h2{
     text-align:center;
     color: #d96846;
     text-transform: uppercase;
     margin-bottom: 1em;
-}
-
-h3{
-    font-size: 16px;
 }
 
 img {
@@ -42,13 +41,13 @@ img {
 a,
 a:hover,
 a:focus {
-    color: red;
+    color: #d96846;
 }
 
 body {
     font-family: "Raleway", san-serif;
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.65;
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
@@ -188,7 +187,7 @@ blockquote {
     height: 0%;
 }
 
-.arrow
+/*.arrow*/
 
 .preloader .loader {
     width: 50px;
@@ -202,7 +201,10 @@ blockquote {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: #d96846;
+/*<<<<<<< HEAD*/
+    background-color: #7f5906;
+/*=======*/
+   /* background-color: #d96846;*/
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
@@ -383,6 +385,9 @@ nav.fixed-top .nav-item {
 nav.fixed-top .nav-item .nav-link {
     color: #222 !important;
 }
+nav.fixed-top .nav-item .nav-link.active{
+    color: #d96846 !important;
+}
 
 nav.fixed-top .nav-item .nav-link:before {
     background-color: #000;
@@ -432,6 +437,10 @@ nav.fixed-top .nav-item .nav-link:before {
     color: #fff;
 }
 
+.banner-caption h4{
+    color: #Fff !important;
+}
+
 .banner .banner-caption p {
     font-size: 20px;
     font-family: "Raleway", san-serif;
@@ -460,7 +469,7 @@ nav.fixed-top .nav-item .nav-link:before {
 }
 
 
-/* @-webkit-keyframes bounce {
+ @-webkit-keyframes bounce {
     0%,
     20%,
     50%,
@@ -477,7 +486,7 @@ nav.fixed-top .nav-item .nav-link:before {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
-} */
+} 
 
 @keyframes bounce {
     0%,
@@ -496,16 +505,6 @@ nav.fixed-top .nav-item .nav-link:before {
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
     }
-}
-
-
-/*===Slider Page===*/
-.banner .banner-slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
 }
 
 
@@ -534,22 +533,13 @@ nav.fixed-top .nav-item .nav-link:before {
     text-align: center;
 }
 
-/*===Index Particles===*/
-
-.banner #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 15;
-}
-
 
 /*============ 5. About Section ============*/
 .about-inner
 {
-    background-color: #cdcbd6; 
+    /*background-colo`r: #cdcbd6; */
+    text-align: center;
+    padding: 100px 0px;
 }
 
 /*============= how ===================*/
@@ -582,88 +572,6 @@ nav.fixed-top .nav-item .nav-link:before {
     display: block;
 }
 
-/*============ 11. Contact Section ============*/
-
-.contact .single-info {
-    position: relative;
-    padding: 30px;
-    margin-bottom: 15px;
-    background-color: #f5f5f5;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.contact .single-info .info-icon {
-    position: absolute;
-    top: 25px;
-    left: 30px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #222;
-    text-align: center;
-    line-height: 50px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.contact .single-info .info-content {
-    padding-left: 70px;
-}
-
-.contact .single-info .info-content h5 {
-    margin-bottom: 5px;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.contact .single-info .info-content p {
-    margin-bottom: 0;
-    font-size: 15px;
-}
-
-.contact #contact-form .form-group {
-    margin-bottom: 24px;
-}
-
-.contact #contact-form .form-group .form-control {
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    color: #222;
-    border: 0;
-    border-bottom: 2px solid #222;
-    height: 3em;
-    -webkit-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
-
-.contact #contact-form .form-group textarea.form-control {
-    height: auto;
-    resize: none;
-}
-
-.contact #contact-form .form-group .con-error {
-    border-color: red;
-}
-
-.contact #contact-form .form-control:hover,
-.contact #contact-form .form-control:active,
-.contact #contact-form .form-control:focus {
-    -webkit-box-shadow: none;
-    -moz-webkit-box-shadow: none;
-    box-shadow: none;
-    border-color: #222;
-}
-
-
 /*============ 12. Footer  ============*/
 
 footer {
@@ -691,36 +599,98 @@ footer .copy {
 }
 
 
-/*============ 13. Blogs Page ============*/
 
-section.banner-blog {
-    height: 50vh;
-    background-color: #222;
-    position: relative;
-    overflow: hidden;
-}
 
-section.banner-blog #particles-js {
+/*#about {
+    background: url('../images/bull.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
+
+.blur{
     width: 100%;
-    height: 100%;
-}
-
-section.banner-blog .banner-caption {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
+    height: 10px;
+    border-top: 10px solid rgb(14, 14, 14);
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-4px);
+    filter: blur(5px);
 }
 
-section.banner-blog .banner-caption h1 {
-    color: #fff;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
+.who{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.who .card{
+    background-color: transparent !important;
+    /*border: 1px  solid;*/
+    margin: 10px;
+    border:none;
+
+}
+.who p{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+
+.row{
+    justify-content: center !important;
+}
+
+.card{
+    min-height: 300px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#buy .card{
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.batch{
+    background-color: #d96846;
+    color: white;
+    width:100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    /*border-bottom-left-radius: 10px;*/
+}
+
+
+.stat{
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:350px;
+    background-color: #222;
+    padding:1em;
+    border-radius: 10px;
+    color: #fff !important;
+    text-align: center;
+    z-index: 20;
+    opacity: .7;
+}
+
+
+
+
 
 /*============ 15. Mobile Responsive  ============*/
 
@@ -779,21 +749,8 @@ section.banner-blog .banner-caption h1 {
     section.banner-blog .banner-caption h1 {
         font-size: 32px;
     }
-}
-
-#about {
-    background: url('../images/bull.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.blur{
-    width: 100%;
-    position: absolute;
-    height: 10px;
-    border-top: 10px solid rgb(14, 14, 14);
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(-4px);
-    filter: blur(5px);
+    .stat{
+        position: static !important;
+        display: none;
+    }
 }
