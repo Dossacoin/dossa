@@ -751,6 +751,8 @@ footer .copy {
     }
     .stat{
         position: static !important;
-        display: none;
+        /*display: none;*/
+        /*width: 100px;*/
+        z-index: 20;
     }
 }
