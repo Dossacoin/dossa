@@ -52,7 +52,7 @@ body {
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 p {
