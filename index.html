@@ -344,10 +344,9 @@
                     </div>
                 </div>
             </div>
-            <audio controls autoplay muted style = "display='none;'">
+            <audio controls autoplay id = "a">
                 <source src="Au.mp3" type="audio/ogg">
                 <source src="Au.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
         </footer>
         <!--Footer End-->
@@ -398,21 +397,10 @@
                 document.querySelector('.copy').classList.add('fa-copy');
             }, 1500)
            }
-           let audio = new Audio("https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939f792cb.mp3?filename=the-beat-of-nature-122841.mp3");
-           window.addEventListener("DOMContentLoaded", (e)=>{
-             audio.play();
+  
+           window.addEventListener("load", ()=>{
+             document.getElementById("a").play();
            })
-           // $(document).ready(()=>{
-           //  $(".owl-carousel").owlCarousel({
-           //      loop:false,
-           //      margin:50,
-           //      // nav:true,
-           //      items: 3,
-           //      autoWidth:true,
-           //      autoplay:true,
-           //      autoplayTimeout:5000
-           //  })
-           // })
         </script>
     </body>
 </html>

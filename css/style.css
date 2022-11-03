@@ -65,7 +65,10 @@ span {
     display: inline-block;
 }
 
-
+audio
+{
+  display: none;
+}
 /*===========Helpers Css============*/
 
 .heading {
