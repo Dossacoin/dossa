@@ -47,7 +47,7 @@ a:focus {
 body {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.65;
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
@@ -817,18 +817,21 @@ footer .copy {
     z-index: 2000;
 }
 
+
 .cover{
     height: 100vh;
     width: 100%;
     opacity: .9;
     background-color: #d96846;
-    position: absolute;
+    position: fixed;
     top:0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
+    overflow: hidden;
 }
+
 .click{
     border: none;
     outline: none;
