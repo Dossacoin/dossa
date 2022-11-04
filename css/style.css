@@ -45,12 +45,14 @@ a:focus {
 }
 
 body {
-    font-family: "Raleway", san-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     font-size: 18px;
     line-height: 1.65;
     color: #2f3020;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 p {
@@ -63,7 +65,10 @@ span {
     display: inline-block;
 }
 
-
+audio
+{
+  display: none;
+}
 /*===========Helpers Css============*/
 
 .heading {
@@ -398,7 +403,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 .banner {
     width: 100%;
-    background-image: url('../images/Banner2.png');
+    background-image: url('../images/Banner.png');
     -webkit-background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -598,20 +603,6 @@ footer .copy {
     color: #aaa;
 }
 
-
-
-
-/*#about {
-    background: url('../images/bull.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}*/
-
-
-.active{
-    color: #d96846 !important;
-}
 .blur{
     width: 100%;
     position: absolute;
@@ -692,9 +683,6 @@ footer .copy {
 }
 
 
-
-
-
 /*============ 15. Mobile Responsive  ============*/
 
 @media screen and (max-width: 991px) {
@@ -728,12 +716,19 @@ footer .copy {
     section.banner-blog .banner-caption h1 {
         font-size: 40px;
     }
+    .ads{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    body{
+        width: 100%;
+        max-width: 100%;
+    }
     .banner{
         text-align: center;
-        background-image: url(../images/banner-phone1.png);
+        background-image: url(../images/Banner-phone2.png);
         background-size: 100% 100%;
     }
     .banner .banner-caption h1 {
@@ -754,6 +749,60 @@ footer .copy {
     }
     .stat{
         position: static !important;
+        /*display: none;*/
+        /*width: 100px;*/
+        z-index: 20;
+    }
+    .ads{
         display: none;
+    }
+}
+
+.marquee {
+    height: 30px;	
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 400;
+    background: #333;
+    color: #fff;
+}
+.marquee p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* line-height: 30px; */
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 10s linear infinite;
+    -WebKit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+    transition: animation 10s ease-in-out;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+    0% { 
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%); 		
+    }
+    100% { 
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%); 
     }
 }
