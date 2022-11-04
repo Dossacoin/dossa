@@ -344,7 +344,7 @@
                     </div>
                 </div>
             </div>
-            <audio controls id = "a">
+            <audio controls autoplay muted id = "a">
                 <source src="./Au.mp3" type="audio/mpeg">
             </audio>
         </footer>
@@ -352,6 +352,14 @@
 
         <!-- ads-->
         <img src="images/ads.PNG" class="ads" style="position:fixed; top:50%; right:0%; width:200px; height: 250px; z-index: 200;" alt="">
+
+        <div class="play">
+            <img src="https://cdn-icons-png.flaticon.com/128/151/151859.png" alt="" class="play-icon">
+        </div>
+
+        <div class="cover">
+            <button class="click">Click here to Enter...</button>
+        </div>
 
         <!--Jquery js-->
         <script src="js/jquery.min.js"></script>
@@ -397,10 +405,38 @@
             }, 1500)
            }
   
-           window.addEventListener("scroll", ()=>{
-             document.getElementById("a").play();
+           let state = false;
+
+           document.querySelector(".play").addEventListener("click", e=>{
+            let playBtn = document.querySelector(".play-icon");
+            state = !state
+            if (state)
+            {
+                document.querySelector("#a").muted = false;
+                document.querySelector("#a").play();
+                playBtn.setAttribute("src", "https://cdn-icons-png.flaticon.com/128/151/151859.png")
+            }else{
+                document.querySelector("#a").muted = true;
+                playBtn.setAttribute("src", "https://cdn-icons-png.flaticon.com/128/860/860780.png")
+               
+            }
+
            })
-           
+
+        //    for the button inside the cover div
+           document.querySelector(".click").addEventListener("click", e=>{
+            document.querySelector(".cover").style.display = "none"
+            
+            state = !state
+            if (state)
+            {
+                document.querySelector("#a").muted = false;
+                document.querySelector("#a").play();
+            }else{
+                document.querySelector("#a").muted = true;
+            }
+           })
+                   
         </script>
     </body>
 </html>
