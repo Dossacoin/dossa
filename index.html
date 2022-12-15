@@ -39,18 +39,18 @@
                     </button>
                 </div>
 
-                <div class="r hidden rounded mt-5 md:mt-0 w-full text-center bg-yellow-200 md:flex md:items-center md:w-auto">
-                    <a href="" class="block p-3 w-full text-black md:text-white mt-4 md:inline-block md:mr-4 md:hover:text-yellow-300">
+                <div class="r hidden rounded mt-5 md:mt-0 w-full text-center bg-yellow-200 md:bg-transparent md:flex md:w-[50%] md:items-center ">
+                    <a href="" class="block flex-grow p-3 md:p-0 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:hover:text-yellow-300">
                         Home
                     </a>
-                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:inline-block md:mr-4 md:hover:text-yellow-300">
+                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:p-0 flex-grow md:hover:text-yellow-300">
                         About
                     </a>
                     <a href="#responsive-header"
-                        class="block p-3 w-full text-black md:text-white mt-4 md:inline-block md:mr-4 md:hover:text-yellow-300">
+                        class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:p-0 md:hover:text-yellow-300 flex-grow">
                         Our community
                     </a>
-                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:inline-block md:mr-4 md:hover:text-yellow-300">
+                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:p-0 md:mr-4 md:hover:text-yellow-300 flex-grow">
                         our team
                     </a>
                 </div>
@@ -304,6 +304,12 @@
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+        })
+
+        document.addEventListener('scroll', ()=>{
+            if(!menu.classList.contains('hidden')){
+                menu.classList.add('hidden')
+            }
         })
 
     </script>
