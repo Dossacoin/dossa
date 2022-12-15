@@ -18,10 +18,10 @@
 <body class="bg-[#020619] text-white">
 
     <!--Navbar Start-->
-    <header class="h-auto md:h-[80vh] relative">
+    <header class="container p-4 mx-auto md:h-[80vh] relative">
         <!-- <div class="blur-lg rounded-full z-10 absolute left-0 top-0 bg-cyan-400 w-[500px] h-[500px]"></div> -->
         <!-- <div class="blur-3xl rounded-full z-0 absolute -translate-x-20 left-0 bottom-0 bg-cyan-400 w-[500px] h-[500px]"></div> -->
-        <nav class="z-20 container mx-auto p-6">
+        <nav class="z-20 p-6">
             <div class="flex items-center bg-transparent justify-between flex-wrap ">
                 <!-- LOGO -->
                 <a href="" class="flex items-center flex-shrink-0 text-white mr-6">
@@ -29,9 +29,8 @@
                     <span class="ml-2">Dossa</span>
                 </a>
 
-                <div class="block lg:hidden">
-                    <button
-                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <div class="block md:hidden">
+                    <button class="flex items-center px-3 py-2 border rounded hover:text-white hover:border-white">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -39,19 +38,19 @@
                     </button>
                 </div>
 
-                <div class="hidden md:block lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow">
-                        <a href="" class="block mt-4 lg:inline-block lg:mr-4 mr-4 hover:text-yellow-300">
+                <div class="hidden md:flex md:items-center md:w-auto">
+                    <div class="text-sm md:flex-grow">
+                        <a href="" class="block mt-4 md:inline-block md:mr-4 hover:text-yellow-300">
                             Home
                         </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mr-4 hover:text-yellow-300">
+                        <a href="#responsive-header" class="block mt-4 md:inline-block md:mr-4 hover:text-yellow-300">
                             About
                         </a>
                         <a href="#responsive-header"
-                            class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 hover:text-yellow-300">
+                            class="block mt-4 md:inline-block lg:mt-0 md:mr-4 hover:text-yellow-300">
                             Our community
                         </a>
-                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-300">
+                        <a href="#responsive-header" class="block mt-4 md:inline-block lg:mt-0 hover:text-yellow-300">
                             our team
                         </a>
                     </div>
@@ -62,11 +61,11 @@
         <!--Navbar End-->
 
         <!--Home Section Start-->
-        <section class="container mx-auto h-full max-h-full flex justify-centern items-center text-justify text-4xl">
+        <section class="container p-3 mx-auto h-full max-h-full flex justify-center items-center text-justify text-4xl">
             <div class="flex flex-col-reverse md:flex-row flex-wrap items-center justify-between">
                 <div class=" p-[1em] md:p-[0] mt-[150px] md:mt-0 text-center md:text-start md:w-[50%]">
-                    <h1 class="text-[60px] md:text-[160px] text-yellow-200 mb-[40px]">Dossacoin</h1>
-                    <h2 class="text-[20px] md:text-[50px]">Because it's fun to be a degenerate</h2>
+                    <h1 class="text-[60px] lg:text-[160px] text-yellow-200 mb-[40px]">Dossacoin</h1>
+                    <h2 class="text-[20px] lg:text-[50px]">Because it's fun to be a degenerate</h2>
                     <p class="my-5 text-[15px] md:text-[20px] italic">
                         This is a meme coin, no utility. Probably the easiest way you'd
                         ever make a grand.
@@ -80,8 +79,11 @@
                             aria-hidden="true"></i></p>
                 </div>
                 <div class="relative m-4">
-                    <div class="bg-yellow-200 animate-pulse blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full"></div>
-                    <img src="images/banner_img.png" class="z-10 absolute top-0 left-0 w-[400px] h-[400px] md:w-full md:h-full" alt="">
+                    <div
+                        class="bg-yellow-200 animate-pulse blur-3xl w-[200px] h-[250px] lg:w-[500px] lg:h-[500px] rounded-full">
+                    </div>
+                    <img src="images/banner_img.png"
+                        class="z-10 absolute top-0 left-0 w-[400px] h-[400px] md:w-full md:h-full" alt="">
                 </div>
             </div>
         </section>
@@ -91,7 +93,7 @@
 
 
     <!-- ABOUT  US -->
-    <section class="container mx-auto text-center min-h-[500px] flex justify-start items-center">
+    <section class="container p-3 text-center mx-auto min-h-[400px]">
 
         <div class="flex flex-col-reverse md:flex-row items-center justify-center md:mt-0 h-full">
 
@@ -99,26 +101,30 @@
 
                 <h2 class="md:text-4xl">ABOUT</h2>
 
-               <div class="p-4 md:p-0">
-                <p class="text-[15px] md:text-xl mt-3">
-                    This is a meme coin, no utility, probably the easiest way you'd ever make a grand or fastest way
-                    to loose your life savings. So, Not financial advice.. </p>
-                <p class="text-[15px] md:text-xl mt-3">
-                    We created this token as way of shilling Algorand to our peeps from other chains. Haven't heard
-                    of Algorand? <a href="https://www.algorand.foundation/" class="text-yellow-200 uppercase"> Read here.....</a>
-                </p>
+                <div class="md:p-0">
+                    <p class="text-[15px] md:text-xl mt-3">
+                        This is a meme coin, no utility, probably the easiest way you'd ever make a grand or fastest way
+                        to loose your life savings. So, Not financial advice.. </p>
+                    <p class="text-[15px] md:text-xl mt-3">
+                        We created this token as way of shilling Algorand to our peeps from other chains. Haven't heard
+                        of Algorand? <a href="https://www.algorand.foundation/" class="text-yellow-200 uppercase"> Read
+                            here.....</a>
+                    </p>
 
-                <p class="text-[15px] md:text-xl mt-3 ">
-                    We're a group of 6 degen friends, scattered across multiple chain and bounded by our love for
-                    algorand.
-                    We hope to create a healthy community with you.
-                </p>
-               </div>
+                    <p class="text-[15px] md:text-xl mt-3 ">
+                        We're a group of 6 degen friends, scattered across multiple chain and bounded by our love for
+                        algorand.
+                        We hope to create a healthy community with you.
+                    </p>
+                </div>
             </div>
 
-            <div class="relative">
-                <img src="images/nft/nft_1.png" class='absolute z-10 translate-x-0 md:translate-x-[250px] md:translate-y-70 w-[200px] h-[200px]' alt="">
-                <img src="images/nft/nft_1.png" class="-translate-x-12 md:translate-x-[350px] md:translate-y-70 w-[200px] h-[200px] " alt="">
+            <div class="relative h-full flex justify-center md:w-[50%]">
+                <img src="images/nft/nft_1.png"
+                    class='absolute z-10 d-flex translate-x-5 lg:translate-x-[250px] lg:translate-y-70 w-[200px] h-[200px]'
+                    alt="">
+                <img src="images/nft/nft_1.png"
+                    class="-translate-x-0 d-flex lg:translate-x-[350px] lg:translate-y-70 w-[200px] h-[200px] " alt="">
             </div>
         </div>
     </section>
@@ -249,7 +255,8 @@
         <h2 class="text-center text-[20px] md:text-4xl my-10">JOIN OUR CLUB</h2>
         <div class="flex justify-center">
             <a href="https://twitter.com/DossaCoinASA" class="hover:animate-bounce">
-                <img class=" mr-5 rounded-full w-[50px] h-[50px] md:w-[100px] md:h-[100px]" src="images/twitter_logo.png">
+                <img class=" mr-5 rounded-full w-[50px] h-[50px] md:w-[100px] md:h-[100px]"
+                    src="images/twitter_logo.png">
             </a>
             <a href="https://www.reddit.com/r/Dossaclub?utm_medium=android_app&utm_source=share"
                 class="hover:animate-bounce">
@@ -268,7 +275,9 @@
 
     <div class="container mx-auto text-center mt-[100px]">
         <a href="mailto:info@dossacoin.club">
-            <span class="p-4 inline-block w-[300px]  bg-yellow-300 hover:bg-yellow-500 rounded-xl mx-auto uppercase">mail us</span>
+            <span
+                class="p-4 inline-block w-[300px]  bg-yellow-300 hover:bg-yellow-500 rounded-xl mx-auto uppercase">mail
+                us</span>
         </a>
 
     </div>
