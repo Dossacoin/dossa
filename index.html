@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -18,15 +18,14 @@
 <body class="bg-[#020619] text-white">
 
     <!--Navbar Start-->
-    <header class="container p-4 mx-auto md:h-[80vh] relative">
-        <!-- <div class="blur-lg rounded-full z-10 absolute left-0 top-0 bg-cyan-400 w-[500px] h-[500px]"></div> -->
-        <!-- <div class="blur-3xl rounded-full z-0 absolute -translate-x-20 left-0 bottom-0 bg-cyan-400 w-[500px] h-[500px]"></div> -->
+    <header class="p-4 mx-auto md:h-[100vh] relative">
+
         <nav class="z-20 p-6">
             <div class="flex items-center bg-transparent justify-between flex-wrap ">
                 <!-- LOGO -->
                 <a href="" class="flex items-center flex-shrink-0 text-white mr-6">
                     <img src="images/dossa_logo.png" class="w-10 h-10 rounded-full">
-                    <span class="ml-2">Dossa</span>
+                    <span class="ml-1  uppercase">Dossa</span>
                 </a>
 
                 <div class="block md:hidden">
@@ -39,18 +38,22 @@
                     </button>
                 </div>
 
-                <div class="r hidden rounded mt-5 md:mt-0 w-full text-center bg-yellow-200 md:bg-transparent md:flex md:w-[50%] md:items-center ">
-                    <a href="" class="block flex-grow p-3 md:p-0 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:hover:text-yellow-300">
+                <div
+                    class="r hidden rounded mt-5 md:mt-0 w-full text-center bg-yellow-200 md:bg-transparent md:flex md:w-[50%] md:items-center ">
+                    <a href="#home"
+                        class="block flex-grow p-3 md:p-0 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:hover:text-yellow-300">
                         Home
                     </a>
-                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:p-0 flex-grow md:hover:text-yellow-300">
+                    <a href="#about"
+                        class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:p-0 flex-grow md:hover:text-yellow-300">
                         About
                     </a>
-                    <a href="#responsive-header"
+                    <a href="#community"
                         class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:mr-4 md:p-0 md:hover:text-yellow-300 flex-grow">
                         Our community
                     </a>
-                    <a href="#responsive-header" class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:p-0 md:mr-4 md:hover:text-yellow-300 flex-grow">
+                    <a href="#team"
+                        class="block p-3 w-full text-black md:text-white mt-4 md:mt-0 md:inline-block md:p-0 md:mr-4 md:hover:text-yellow-300 flex-grow">
                         our team
                     </a>
                 </div>
@@ -61,12 +64,13 @@
         <!--Navbar End-->
 
         <!--Home Section Start-->
-        <section class="container p-3 mx-auto h-full max-h-full flex justify-center items-center text-justify text-4xl">
+        <section class="container p-3 mx-auto h-full max-h-full flex justify-center items-center text-justify text-4xl"
+            id="home">
             <div class="flex flex-col-reverse md:flex-row flex-wrap items-center justify-between">
                 <div class=" p-[1em] md:p-[0] mt-[150px] md:mt-0 text-center md:text-start md:w-[50%]">
-                    <h1 class="text-[60px] lg:text-[160px] text-yellow-200 mb-[40px]">Dossacoin</h1>
-                    <h2 class="text-[20px] lg:text-[50px]">Because it's fun to be a degenerate</h2>
-                    <p class="my-5 text-[15px] md:text-[20px] italic">
+                    <h1 class="text-[60px] xl:text-[100px] text-yellow-200 mb-[40px]">Dossacoin</h1>
+                    <h2 class="text-[20px] xl:text-[30px]">Because it's fun to be a degenerate</h2>
+                    <p class="my-5 text-[15px] xl:text-[15px] italic">
                         This is a meme coin, no utility. Probably the easiest way you'd
                         ever make a grand.
                         find more about us below.
@@ -77,10 +81,12 @@
                     </h4>
                     <p class="text-[15px]">Perawallet verified<i class="fa fa-check p-2 ml-2 bg-yellow-400 rounded-full"
                             aria-hidden="true"></i></p>
+                    <!-- <button class="bg-yellow-200 text-black text-[15px] h-full w-[160px] rounded-xl mt-5">Buy
+                        Dossa</button> -->
                 </div>
                 <div class="relative m-4">
                     <div
-                        class="bg-yellow-200 animate-pulse blur-3xl w-[200px] h-[250px] lg:w-[500px] lg:h-[500px] rounded-full">
+                        class="bg-yellow-200 animate-pulse blur-3xl w-[200px] h-[250px] lg:w-[400px] lg:h-[500px] rounded-full">
                     </div>
                     <img src="images/banner_img.png"
                         class="z-10 absolute top-0 left-0 w-[400px] h-[400px] md:w-full md:h-full" alt="">
@@ -91,40 +97,69 @@
 
     <!--Home Section End-->
 
-
     <!-- ABOUT  US -->
-    <section class="container p-3 text-center mx-auto min-h-[400px]">
+    <section class="container p-3 text-center mx-auto min-h-[400px]" id="about">
 
-        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:mt-0 h-full">
+        <div class="flex flex-col-reverse md:flex-row-reverse items-center justify-center md:mt-0 h-full">
 
-            <div class='w-full items-center md:text-start md:w-[50%] mt-[30px] h-full text-2xl'>
+            <div class='w-full md:text-start md:w-[50%] mt-[30px] h-full text-2xl'>
 
                 <h2 class="md:text-4xl">ABOUT</h2>
 
-                <div class="md:p-0">
-                    <p class="text-[15px] md:text-xl mt-3">
+
+
+                <div class="md:p-0 text-[15px]">
+                    <!-- <p class="text-[15px] md:text-xl mt-3">
                         This is a meme coin, no utility, probably the easiest way you'd ever make a grand or fastest way
                         to loose your life savings. So, Not financial advice.. </p>
                     <p class="text-[15px] md:text-xl mt-3">
                         We created this token as way of shilling Algorand to our peeps from other chains. Haven't heard
                         of Algorand? <a href="https://www.algorand.foundation/" class="text-yellow-200 uppercase"> Read
                             here.....</a>
+                    </p> -->
+
+                    <h3 class="text-2xl my-4">Welcome to the world of a meme coin on Algorand!</h3>
+
+                    <p>
+                        Dossa coin is a decentralized cryptocurrency built on the Algorand blockchain, which is known
+                        for
+                        its fast, secure, and scalable transactions. We created this meme coin as a way to bring
+                        together
+                        degen traders across chains and add some fun and humor to the world of cryptocurrency , while
+                        also
+                        leveraging the power of the Algorand platform.
                     </p>
 
-                    <p class="text-[15px] md:text-xl mt-3 ">
+                    <p class="mt-4">
+                        With dossa coin, you become a member of the dossa club, join lotteries and very soon use them
+                        for in
+                        house exchange . Whether you're a fan of classic meme coins like doge or shiba or you're into
+                        the
+                        latest crypto trends there's something for everyone with dossa
+                    </p>
+
+                    <p class="mt-4">
+                        So join the fun and start using dossa coin today! Whether you're looking to hold onto the coin
+                        for a
+                        lambo or you want to use them for lotteries there's never been a better time to get involved
+                        with
+                        dossa coin on Algorand
+                    </p>
+
+                    <!-- <p class="text-[15px] md:text-xl mt-3 ">
                         We're a group of 6 degen friends, scattered across multiple chain and bounded by our love for
                         algorand.
                         We hope to create a healthy community with you.
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
-            <div class="relative h-full flex justify-center md:w-[50%]">
+            <div class="relative h-full  md:w-[50%]">
+                <!-- <img src="images/nft/nft_1.png"
+                    class='absolute z-10'
+                    alt=""> -->
                 <img src="images/nft/nft_1.png"
-                    class='absolute z-10 d-flex translate-x-5 lg:translate-x-[250px] lg:translate-y-70 w-[200px] h-[200px]'
-                    alt="">
-                <img src="images/nft/nft_1.png"
-                    class="-translate-x-0 d-flex lg:translate-x-[350px] lg:translate-y-70 w-[200px] h-[200px] " alt="">
+                    class="-translate-x-0" alt="">
             </div>
         </div>
     </section>
@@ -135,7 +170,7 @@
 
         <div class="flex flex-col flex-wrap md:flex-row justify-center items-center md:justify-between ">
 
-            <div class="shadow shadow-yellow-100 p-[2em] w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
+            <div class="shadow-2xl w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
                 <div class="flex flex-col justify-center items-center h-full">
                     <img src="images/dossa_logo.png" class="m-3 w-[60px] h-[60px] rounded-full" alt="">
                     <h4 class="text-bold ">Decipherer.web</h4>
@@ -143,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="shadow shadow-yellow-100 p-[2em] w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
+            <div class="shadow-2xl w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
                 <div class="flex flex-col justify-center items-center h-full">
                     <img src="images/dossa_logo.png" class="m-3 w-[60px] h-[60px] rounded-full" alt="">
                     <h4 class="text-bold ">Parson</h4>
@@ -153,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="shadow shadow-yellow-100 p-[2em] w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
+            <div class="shadow-2xl w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
                 <div class="flex flex-col justify-center items-center h-full">
                     <img src="images/dossa_logo.png" class="m-3 w-[60px] h-[60px] rounded-full" alt="">
                     <h4 class="text-bold text-white"> D E V ||DOSSA INU </h4>
@@ -163,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="shadow shadow-yellow-100 p-[2em] w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
+            <div class="shadow-2xl w-[300px] h-[300px] rounded-2xl m-4 md:m-0">
                 <div class="flex flex-col justify-center items-center h-full">
                     <img src="images/dossa_logo.png" class="m-3 w-[60px] h-[60px] rounded-full" alt="">
                     <h4 class="text-bold ">Kingsjee</h4>
@@ -177,72 +212,99 @@
     </section>
 
     <!--  HOW TO BUY  -->
-    <section class="container mx-auto text-center mt-20">
+    <section class="container mx-auto text-center p-5 mt-20" id="community">
         <h2 class="text-center text-[20px] md:text-4xl my-20">HOW TO LOAD YOUR DOSSA BAG</h2>
         <div class="grid md:grid-cols-3 gap-5">
 
-            <div class="shadow-2xl h-[250px] rounded-2xl">
-                <div class="h-full  p-[15px] flex flex-col items-center justify-center ">
-                    <div class="text-xl uppercase">step 1</div>
-                    Purchase Algorand from nearly any centralised exchange, I prefer binance or kucoin. You might
-                    also choose to ask a friend for some algo.
-                    Alternatively its possible a crypto you already holdhas a bridge to swap for it as well!
+            <div class="shadow-2xl h-[350px] overflow-hidden relative rounded-2xl">
+
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full  p-[15px] flex flex-col z-index-10 relative items-center justify-center ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 1</div>
+                    <p>Purchase Algorand from nearly any centralised exchange, I prefer binance or kucoin. </p>
+                    <p class="mt-2">Alternatively its possible a crypto you already holdhas a bridge to swap for it as
+                        well!</p>
                 </div>
             </div>
 
-            <div class="shadow-lg h-[250px] rounded-2xl">
-                <div class="h-full  p-[15px] flex flex-col items-center justify-center ">
-                    <div class="text-xl uppercase">step 2</div>
+            <div class="shadow-2xl h-[350px] relative overflow-hidden rounded-2xl">
+
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full  p-[15px] relative flex flex-col items-center justify-center z-index-10 ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 2</div>
                     <div>
                         <h3> Create an algorand wallet </h3>
                     </div>
                     <div>
                         <p>
                             Option A: Pera algo wallet(Mobile application)
-                            <a href="https://perawallet.app/">visit</a>
+                            <a href="https://perawallet.app/" class="text-yellow-200">visit</a>
                         </p>
 
                         <p>
                             Option B: Myalgo wallet(web wallet)
-                            <a href="https://wallet.myalgo.com/">here..</a>
+                            <a href="https://wallet.myalgo.com/" class="text-yellow-200">here..</a>
                         </p>
-                        <strong>Both wallets are extremely easy to set up and use and will only take a few
-                            moments!</strong>
                     </div>
                 </div>
             </div>
 
-            <div class="shadow-md h-[250px] rounded-lg">
-                <div class="h-full w-full  p-[15px] flex flex-col items-center justify-center ">
-                    <div class="text-xl uppercase">step 3</div>
+            <div class="shadow-2xl h-[350px] relative overflow-hidden rounded-lg">
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full w-full relative z-index-10  p-[15px] flex flex-col items-center justify-center ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 3</div>
                     Copy your address from the newly created wallet and send your Algorand to your new wallet.
                 </div>
             </div>
 
-            <div class="shadow-md h-[250px] rounded-lg">
-                <div class="h-full  p-[15px] flex flex-col items-center justify-center ">
-                    <div class="text-xl uppercase">step 4</div>
+            <div class="shadow-2xl h-[350px] relative overflow-hidden rounded-lg">
+
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full relative z-index-10  p-[15px] flex flex-col items-center justify-center ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 4</div>
                     Visit the most popular algorand Dex
                     <a href="https://app.tinyman.org/#/swap?asset_in=0">tinyman</a>
                 </div>
             </div>
 
-            <div class="shadow-md h-[250px] rounded-lg">
-                <div class="h-full  p-[15px] flex flex-col items-center justify-center  ">
-                    <div class="text-xl uppercase">step 5</div>
+            <div class="shadow-2xl h-[350px] relative overflow-hidden rounded-lg">
+
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full  p-[15px] flex flex-col relative z-index-10 items-center justify-center  ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 5</div>
                     <p>
                         Connect your wallet, ensure you have at least 2.5 algo.
                     </p>
-                    <p>
+                    <p class="mt-4">
                         Search for Dossa Coin or simply paste this ASA ID <strong
                             class="text-yellow-200">913799044</strong>
                     </p>
                 </div>
             </div>
 
-            <div class="shadow-md h-[250px] rounded-lg">
-                <div class="h-full  p-[15px] flex flex-col items-center justify-center ">
-                    <div class="text-xl uppercase">step 6</div>
+            <div class="shadow-2xl h-[350px] overflow-hidden relative rounded-lg">
+
+                <div
+                    class="rounded-full bg-yellow-200 w-full h-[160px] z-index-0 absolute -translate-x-[180px] -translate-y-[60px] top-0 left-0">
+                </div>
+
+                <div class="h-full  p-[15px] flex flex-col relative z-index-10 items-center justify-center ">
+                    <div class="text-2xl absolute left-0 top-0 font-bold uppercase m-10 text-black">step 6</div>
                     Enter any amount of algo you wish to swap for precious Dossa and hit that swap button without
                     hesitation.
                 </div>
@@ -251,7 +313,7 @@
     </section>
 
 
-    <section class="container mx-auto">
+    <section class="container mx-auto" id="team">
         <h2 class="text-center text-[20px] md:text-4xl my-10">JOIN OUR CLUB</h2>
         <div class="flex justify-center">
             <a href="https://twitter.com/DossaCoinASA" class="hover:animate-bounce">
@@ -306,11 +368,13 @@
             menu.classList.toggle('hidden');
         })
 
-        document.addEventListener('scroll', ()=>{
-            if(!menu.classList.contains('hidden')){
+        document.addEventListener('scroll', () => {
+            if (!menu.classList.contains('hidden')) {
                 menu.classList.add('hidden')
             }
         })
+
+        AOS.init();
 
     </script>
 </body>
